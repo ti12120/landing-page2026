@@ -1,0 +1,129 @@
+body {
+  background-color: #0c1014;
+  color: #fff;
+  width: 90%;
+  max-width: 960px;
+  margin: 0 auto;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.main-title {
+  text-transform: uppercase;
+  font-size: 23px;
+  width: 100%;
+  text-align: center;
+  margin: 46px 0;
+}
+
+.title {
+  display: flex;
+  background-color: #05080a;
+  padding: 20px;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+}
+
+.title__logo {
+  font-size: 30px;
+  text-transform: uppercase;
+  margin-left: 15px;
+  letter-spacing: 5px;
+}
+
+.navi {
+  list-style-type: none;
+  display: flex;
+  font-size: 15px;
+  gap: 5px;
+  text-transform: uppercase;
+}
+
+.title a:hover {
+  background-color: #ff7070;
+  border-radius: 50px;
+}
+
+.title a {
+  color: #fff;
+  text-decoration: none;
+  padding: 5px;
+}
+
+.title__nav--active {
+  border-radius: 50px;
+  background-color: rgb(255, 0, 0);
+  pointer-events: none;
+}
+
+a.title__nav--active {
+  color: #0c1014;
+}
+
+.prices {
+  display: flex;
+  gap: 20px;
+ 
+}
+
+.prices-plans {
+  display: flex;
+  flex-direction: column;
+  background-color: #1f262c;
+  padding: 12px;
+  border-radius: 10px;
+  /* height: 100%; */
+  width: 100%;
+  align-items: stretch;
+}
+.section {
+  display: flex;
+  align-items: stretch; /* faz os 3 .prices-plans terem a mesma altura */
+  gap: 24px;
+}
+
+.plans__title {
+  text-transform: uppercase;
+  border-bottom: 2px solid red;
+  margin-top: 0;
+  padding-bottom: 10px;
+  letter-spacing: 5px;
+}
+
+p {
+  margin-top: 0;
+}
+
+.prices-plans__price {
+  font-size: 25px;
+}
+
+.prices-plans__content {
+
+    flex-grow: 1;
+  color: #b5b5b5;
+  padding-left: 20px;
+
+  line-height: 1.4;
+  
+}
+
+.prices-plans__cta {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  background-color: #ff0d0d;
+  border-radius: 5px;
+  text-transform: uppercase;
+  padding: 5px;
+  color: #0c1014;
+  font-size: 10px;
+  font-weight: bold;
+  /* margin-top: 50px; */
+  text-align: center;
+  padding-left: 0px;
+}
+
+.prices-plans__cta:hover {
+  background-color: #ff7070;
+}
